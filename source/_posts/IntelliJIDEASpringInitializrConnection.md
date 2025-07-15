@@ -32,7 +32,7 @@ IDEA提示用户检查URL、网络和代理设置。
 
   - "Connection refused: getsockopt" 表示客户端（IntelliJ IDEA）尝试连接服务器（start.spring.io）时，服务器主动拒绝了连接。
   - 这通常不是服务器宕机，而是中间存在阻碍，如防火墙、代理问题，或目标端口未开放。
-  - ![1752501025386](image/IntelliJ-IDEA-Spring-Initializr-Connection-Refused/1752501025386.png)
+  - [!image][https://github.com/Changhuaishui/chenji/blob/main/source/_posts/image/IntelliJ-IDEA-Spring-Initializr-Connection-Refused/1752501025386.png?raw=true]
 - **常见原因**：
 
   1. 本地防火墙或杀毒软件阻止了IDEA的出站连接。
@@ -50,7 +50,7 @@ IDEA提示用户检查URL、网络和代理设置。
 2. 选择“Auto-detect proxy settings”（自动检测代理设置）
 3. 或设置“Automatic proxy configuration URL”（自动代理配置URL）
 4. 应用并重启IDEA
-5. 如图：![1752501066694](image/IntelliJ-IDEA-Spring-Initializr-Connection-Refused/1752501066694.png)
+5. 如图：![https://github.com/Changhuaishui/chenji/blob/main/source/_posts/image/IntelliJ-IDEA-Spring-Initializr-Connection-Refused/1752501066694.png?raw=true)
 
 ### 2. 协议更改
 
