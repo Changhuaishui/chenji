@@ -35,25 +35,41 @@ tags:
 
 ### 第三步：获取正确的图片URL（核心）
 
-这是最容易出错的地方。对于一张GitHub仓库中的图片，您可能会遇到三种URL，但只有一种是最佳选择。
+这是最容易出错的地方。我们来深入理解一下不同链接之间的区别。
 
-假设您的图片路径是：`https://github.com/USERNAME/REPO/blob/main/images/demo.png`
+#### 链接辨析：网页 vs 原始文件
 
-1. **网页浏览URL (错误)**
+##### 1. 错误的链接：`github.com` 网页链接
 
-   * **格式**: `https://github.com/USERNAME/REPO/blob/main/images/demo.png`
-   * **说明**: 这是GitHub用于**浏览文件内容**的网页链接，它本身是一个HTML页面，而不是图片文件。**不能**直接用于图片引用。
-2. **带 `?raw=true`的URL (可用，但不推荐)**
+*   **格式**: `https://github.com/USERNAME/REPO/blob/main/images/demo.png`
+*   **这是什么**: 当你在浏览器中打开这个链接，你看到的不仅仅是图片，而是一个完整的**GitHub网页**，它包含了导航栏、文件列表、代码操作按钮等元素，您的图片只是内嵌在其中。
+*   **为何错误**: 在Markdown中使用 `![]()` 语法时，它需要一个纯粹的图片文件。你给它一个完整的HTML网页，浏览器无法将其渲染为图片，因此链接会失效。
+*   **一个比喻**: 这就像想在相框里放一张照片，却把整个照相馆（连同前台、沙发和摄影师）都硬塞了进去，相框当然装不下。
 
-   * **格式**: `https://github.com/USERNAME/REPO/blob/main/images/demo.png?raw=true`
-   * **说明**: 这个链接通过参数 `raw=true`告诉GitHub返回文件的原始数据。它通常可以工作，但依赖于HTTP重定向，在某些网络环境或浏览器下可能不稳定。
-3. **CDN原始链接 (最佳选择)**
+##### 2. 正确的链接：`raw.githubusercontent.com` 原始文件链接
 
-   * **格式**: `https://raw.githubusercontent.com/USERNAME/REPO/main/images/demo.png`
-   * **说明**: 这是GitHub官方提供的用于访问文件原始内容的CDN（内容分发网络）链接。它**最稳定、最快速、最可靠**。
-   * **转换方法**: 只需将 `github.com` 替换为 `raw.githubusercontent.com`，并移除路径中的 `/blob/` 部分即可。
+*   **格式**: `https://raw.githubusercontent.com/USERNAME/REPO/main/images/demo.png`
+*   **这是什么**: 这是GitHub专门用来提供**文件原始数据（Raw Content）**的CDN服务器地址。访问这个链接，返回的是没有任何多余元素的、纯粹的图片文件数据。
+*   **为何正确**: 这个链接直接指向图片文件本身，浏览器可以毫无障碍地识别并渲染它。
+*   **继续比喻**: 这个链接相当于直接把**照片本身**递给了相框，完美匹配。
 
-**结论：请始终选择第3种链接格式。**
+#### 技巧：如何快速获取正确的图片链接
+
+你不需要手动修改URL。GitHub提供了一个非常简单的方法来获取正确的原始链接，这是一个百试百灵的技巧：
+
+1.  **第一步：在GitHub上找到您的图片文件**
+    打开您的图床仓库，并导航到您想要引用的图片文件页面。
+
+2.  **第二步：找到 "Download" 按钮**
+    在图片预览的右上方，你会看到几个按钮，其中有一个是 **"Download"**（下载）按钮。
+
+3.  **第三步：右键复制链接（最关键）**
+    将鼠标光标移动到 **"Download"** 按钮上，然后点击鼠标**右键**，在弹出的菜单中选择 **"复制链接地址"** (Copy Link Address) 或类似的选项。
+
+4.  **第四步：粘贴到Markdown**
+    现在你的剪贴板里的链接就是格式为 `https://raw.githubusercontent.com/...` 的正确链接了。直接将它粘贴到你的Markdown文档中即可！
+
+这样操作，既快速又保证100%正确，再也不用担心链接引用错误的问题了。
 
 ### 第四步：在Markdown中引用图片
 
