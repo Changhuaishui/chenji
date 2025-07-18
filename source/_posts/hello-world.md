@@ -14,6 +14,7 @@ tags: [前端, 技术, 博客, Hexo]
 - Java开发者，热衷于探索  技术与前沿趋势
 - 擅长 Java/Vue / Node.js
 - 喜欢分享、乐于交流，追求极致的用户体验与代码美学
+- ![蜘蛛doro](https://raw.githubusercontent.com/Changhuaishui/chenji/main/source/image/DORO/蜘蛛doro.gif)
 
 ---
 
