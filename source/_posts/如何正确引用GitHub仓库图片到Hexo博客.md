@@ -1,6 +1,6 @@
 ---
 title: "教程：如何正确引用GitHub仓库图片到Hexo博客"
-date: 2024-07-16 1:00:00
+date: 2025-07-16 1:00:00
 categories:
   - 博客教程
 tags:
