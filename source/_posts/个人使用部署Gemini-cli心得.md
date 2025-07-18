@@ -1,6 +1,6 @@
 ---
 title: 部署 Gemini CLI 的排错与解决方案
-date: 2023-07-15 14:30:00
+date: 2025-07-15 14:30:00
 tags: [Gemini, CLI, Google AI, 代理设置, 问题排查]
 categories: [开发工具, AI工具]
 ---
