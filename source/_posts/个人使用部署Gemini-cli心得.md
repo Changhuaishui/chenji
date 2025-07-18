@@ -62,6 +62,7 @@ set GOOGLE_API_KEY=你的API密钥
 - **问题**：认证通过但网络无响应，超时失败。
 - **原因**：Gemini CLI 不会自动读取系统代理。
 - **解决**：为终端会话设置 `https_proxy` 环境变量。
+ ![代理 示例](https://raw.githubusercontent.com/Changhuaishui/chenji/main/source/_posts/image/%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E9%83%A8%E7%BD%B2Gemini-cli%E5%BF%83%E5%BE%97/%E4%BB%A3%E7%90%86TUN%E6%A8%A1%E5%BC%8F.png)
 
 **Bash (macOS/Linux)：**
 
@@ -76,6 +77,9 @@ set https_proxy=http://127.0.0.1:7890
 ```
 
 设置好 API 密钥和代理后，Gemini CLI 即可正常使用。
+
+![Gemini CLI 使用示例](https://raw.githubusercontent.com/Changhuaishui/chenji/main/source/_posts/image/%E4%B8%AA%E4%BA%BA%E4%BD%BF%E7%94%A8%E9%83%A8%E7%BD%B2Gemini-cli%E5%BF%83%E5%BE%97/GEMINI.png)
+
 参考文章：[国内使用 Gemini CLI 常见登录授权失败：安装与排错指南国内使用 Gemini CLI 常见登录授权失败,网络问 - 掘金](https://juejin.cn/post/7520139212605128714)
 
 ## Step 4: 解决方案——TUN 模式
