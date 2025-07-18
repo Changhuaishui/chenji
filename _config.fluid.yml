@@ -1,0 +1,120 @@
+# Fluid 主题配置
+# https://hexo.fluid-dev.com/docs/guide/
+
+# 网站标题
+navbar:
+  blog_title: 程记的博客
+
+# 主题颜色配置
+color:
+  # 主题色
+  body_bg_color: "#f8f9fa"
+  navbar_bg_color: "#2f4154"
+  navbar_text_color: "#fff"
+
+# 暗色模式
+dark_mode:
+  enable: true
+  default: auto
+
+# 顶部大图
+index:
+  banner_img: /image/DORO/蜘蛛doro.gif
+  banner_img_height: 100
+  slogan:
+    enable: true
+    text: "程记的技术博客"
+
+# 文章页
+post:
+  banner_img: /image/DORO/蜘蛛doro.gif
+  banner_img_height: 70
+
+# 归档页
+archive:
+  banner_img: /image/DORO/蜘蛛doro.gif
+  banner_img_height: 80
+
+# 分类页
+category:
+  banner_img: /image/DORO/蜘蛛doro.gif
+  banner_img_height: 80
+
+# 标签页
+tag:
+  banner_img: /image/DORO/蜘蛛doro.gif
+  banner_img_height: 80
+
+# 关于页
+about:
+  banner_img: /image/DORO/蜘蛛doro.gif
+  banner_img_height: 80
+  avatar: /image/DORO/蜘蛛doro.gif
+  name: "程记"
+  intro: "Java开发者 | 技术爱好者"
+
+# 页脚
+footer:
+  content: '
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener">Hexo</a> 
+    <i class="iconfont icon-love"></i> 
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">Fluid</a>
+    '
+  statistics:
+    enable: true
+
+# 代码高亮
+code:
+  copy_btn: true
+  language:
+    enable: true
+
+# 侧边栏
+sidebar:
+  enable: true
+  widgets:
+    - search
+    - category
+    - tag
+    - recent_posts
+    - links
+
+# 网站图标
+favicon: /image/DORO/蜘蛛doro.gif
+
+# 评论系统
+# 如果需要，可以取消注释下面的内容并配置
+# 例如配置 Gitalk, Valine 等
+
+# gitalk:
+#   enable: false
+#   clientID: 
+#   clientSecret: 
+#   repo: 
+#   owner: 
+#   admin: 
+#   language: zh-CN
+#   labels: ['Gitalk']
+#   perPage: 10
+#   distractionFreeMode: false
+#   pagerDirection: last
+#   createIssueManually: true
+#   proxy: 
+
+# 统计功能
+web_analytics:
+  enable: false
+
+# 友情链接
+links:
+  Github: 
+    link: https://github.com/Changhuaishui
+    avatar: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+
+# 自定义页脚js和css
+inject:
+  enable: true
+  js:
+    - /js/custom.js
+  css:
+    - /css/custom.css 
