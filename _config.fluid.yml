@@ -27,27 +27,27 @@ index:
 
 # 文章页
 post:
-  banner_img: /image/DORO/蜘蛛doro.gif
+  banner_img: /image/Stephen_Shore/20.jpg
   banner_img_height: 70
 
 # 归档页
 archive:
-  banner_img: /image/DORO/蜘蛛doro.gif
+  banner_img: /image/Stephen_Shore/20.jpg
   banner_img_height: 80
 
 # 分类页
 category:
-  banner_img: /image/DORO/蜘蛛doro.gif
+  banner_img: /image/Stephen_Shore/20.jpg
   banner_img_height: 80
 
 # 标签页
 tag:
-  banner_img: /image/DORO/蜘蛛doro.gif
+  banner_img: /image/Stephen_Shore/20.jpg
   banner_img_height: 80
 
 # 关于页
 about:
-  banner_img: /image/DORO/蜘蛛doro.gif
+  banner_img: /image/Stephen_Shore/20.jpg
   banner_img_height: 80
   avatar: /image/DORO/蜘蛛doro.gif
   name: "陈迹"
